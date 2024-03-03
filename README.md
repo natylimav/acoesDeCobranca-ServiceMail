@@ -1,16 +1,8 @@
 <h3 align="center">
-  Como implementar um consumer e producer de um AWS SQS com Java
+Projeto - Ação de Cobrança
+  Envio de notificações por e-mail
+Microserviço envia notificação via E-mail.
 </h3>
-
-<p align="center">
-
-  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-%2304D361">
-  <img alt="Language: Java" src="https://img.shields.io/badge/language-java-green">
-  <img alt="Version: 1.0" src="https://img.shields.io/badge/version-1.0-yellowgreen">
-
-</p>
-
-Para um maior entendimento do código deste repositório, [assista nosso vídeo no Youtube, clique aqui.](https://www.youtube.com/watch?v=56_F59cIT8M)
 
 ## :rocket: Tecnologias utilizadas
 
@@ -19,10 +11,15 @@ Para um maior entendimento do código deste repositório, [assista nosso vídeo 
 * Spring Cloud AWS
 * AWS
 * SQS (Simple Queue Service)
+* Amazon Simple Email Service - SES
 * Localstack
 
-:mag: Baixe o projeto e teste você mesmo na prática.
+ Microserviço responsável por fazer pulling em uma fila SQS, 
+ quando houver mensagem, deve enviar e-mail ao cliente com dados recebidos na mensagem.
 
-[Conheça mais sobre o nosso trabalho 😀](https://www.instagram.com/buildrun.tech/)
+ 
+Referências utilizadas: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html https://docs.awspring.io/spring-cloud-aws/docs/3.1.0/reference/html/index.html#starter-dependencies
+https://aws.amazon.com/pt/ses/
 
-Developed by Build & Run
+
+
